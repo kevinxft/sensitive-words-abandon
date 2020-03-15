@@ -39,7 +39,7 @@ const pagination = async (model, ctx) => {
   }
 }
 
-router.get("/admin/:model", async ctx => {
+router.get("/words/admin/:model", async ctx => {
   try {
     const modelName = ctx.params.model
     ctx.body = await pagination(MODEL[modelName], ctx)
@@ -49,7 +49,7 @@ router.get("/admin/:model", async ctx => {
   }
 })
 
-router.post("/admin/:model", async ctx => {
+router.post("/words/admin/:model", async ctx => {
   try {
     const modelName = ctx.params.model
     const form = ctx.request.body
@@ -65,13 +65,13 @@ router.post("/admin/:model", async ctx => {
   }
 })
 
-router.delete("/admin/:model/:id", async ctx => {
+router.delete("/words/admin/:model/:id", async ctx => {
   const modelName = ctx.params.model
   const res = await MODEL[modelName].deleteOne({ _id: ctx.params.id })
   ctx.body = res
 })
 
-router.get("/sensitive/reload", async ctx => {
+router.get("/words/sensitive/reload", async ctx => {
   const count = await loadData()
   ctx.body = count
 })
