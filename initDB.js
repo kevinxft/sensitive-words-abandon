@@ -1,6 +1,6 @@
 const fs = require("fs")
 const { mongoose } = require("./db")
-const { SensitiveSchema } = require("./schema")
+const { Sensitive } = require("./schema")
 const words = fs.readFileSync("./SensitiveWord.txt", "utf-8").split("\n")
 
 
