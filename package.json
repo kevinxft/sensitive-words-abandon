@@ -1,0 +1,15 @@
+{
+  "scripts": {
+    "dev": "node-dev app.js"
+  },
+  "dependencies": {
+    "dotenv": "^8.2.0",
+    "fastscan": "^1.0.6",
+    "koa": "^2.11.0",
+    "koa-bodyparser": "^4.2.1",
+    "koa-router": "^8.0.8",
+    "koa2-cors": "^2.0.6",
+    "lodash": "^4.17.15",
+    "mongoose": "^5.9.3"
+  }
+}
