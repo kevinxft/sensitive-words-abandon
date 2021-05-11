@@ -9,7 +9,7 @@
     "koa-bodyparser": "^4.2.1",
     "koa-router": "^8.0.8",
     "koa2-cors": "^2.0.6",
-    "lodash": "^4.17.15",
+    "lodash": "^4.17.21",
     "mongoose": "^5.9.3",
     "uuid": "^7.0.2"
   }
